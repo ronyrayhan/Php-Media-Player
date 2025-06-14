@@ -1,0 +1,120 @@
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .media-item {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s;
+            background: #f8f9fa;
+        }
+        .media-item:hover {
+            transform: scale(1.03);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .media-item.favorited {
+            border: 2px solid #dc3545;
+        }
+        .media-thumbnail {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        .media-info {
+            padding: 10px;
+        }
+        .media-title {
+            font-size: 14px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 5px;
+        }
+        .media-actions {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+        }
+        .breadcrumb {
+            background-color: transparent;
+            padding: 15px 20px;
+        }
+        .video-player {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .video-player video {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        .close-player {
+            color: white;
+            font-size: 24px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .folder-icon {
+            width: 100%;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #e9ecef;
+            color: #6c757d;
+            font-size: 48px;
+        }
+        .nav-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .bi-heart-fill {
+            color: #dc3545;
+        }
+        .bi-heart {
+            color: #6c757d;
+        }
+        .bi-heart:hover {
+            color: #dc3545;
+        }
+	.player-container {
+		width: 90%;
+		max-width: 1200px;
+		text-align: center;
+	}
+
+	.player-controls {
+		margin-top: 15px;
+		display: flex;
+		justify-content: center;
+		gap: 10px;
+		flex-wrap: wrap;
+	}
+
+	.player-controls button {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+	}
+
+	#videoElement {
+		max-width: 100%;
+		max-height: 80vh;
+		background: #000;
+	}
